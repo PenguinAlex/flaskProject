@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <h1>Проектный модуль</h1>
+  <p>Проектный модуль позволяет ученикам применить знания, полученные в предыдущих модулях, для решения реальных проблем. Курс включает разработку проекта от идеи до реализации.</p>
+  <hr>
+  <h3>Примеры проектов</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/project1.jpg') }}" class="card-img-top" alt="Проект 1">
+        <div class="card-body">
+          <h5 class="card-title">Проект 1</h5>
+          <p class="card-text">Проект, направленный на создание автоматизированной системы управления складом.</p>
+          <a href="https://africau.edu/images/default/sample.pdf" class="btn btn-primary" target="_blank">Скачать</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/project2.jpg') }}" class="card-img-top" alt="Проект 2">
+        <div class="card-body">
+          <h5 class="card-title">Проект 2</h5>
+          <p class="card-text">Проект, направленный на создание игры-головоломки на базе искусственного интеллекта.</p>
+          <a href="https://africau.edu/images/default/sample.pdf" class="btn btn-primary" target="_blank">Скачать</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/project3.jpg') }}" class="card-img-top" alt="Проект 3">
+        <div class="card-body">
+          <h5 class="card-title">Проект 3</h5>
+          <p class="card-text">Проект, направленный на создание системы распознавания речи на базе нейронных сетей.</p>
+          <a href="https://africau.edu/images/default/sample.pdf" class="btn btn-primary" target="_blank">Скачать</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

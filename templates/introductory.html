@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Образовательный модуль "Вводный"</h1>
+  <div class="row">
+    <div class="col-md-4">
+      <img src="{{ url_for('static', filename='img/introductory.jpg') }}" alt="Мини-изображение для модуля вводный">
+    </div>
+    <div class="col-md-8">
+      <p>В данном модуле ученики ознакомятся с основными понятиями программирования и создания веб-страниц. Они изучат основы HTML, CSS, JavaScript и Flask фреймворка. Курс вводный, поэтому вся информация будет представлена в доступной и интересной форме.</p>
+      <a href="https://africau.edu/images/default/sample.pdf" target="_blank">Скачать материалы</a>
+    </div>
+  </div>
+{% endblock %}
